@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+#content {
+    display: none;
+}
+.error {
+    color: red;
+}
+.lozinka-dizajn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(slike_videi/lozinka.jpg);
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+.input {
+    margin-top: 35px;
+    width: 220px;
+    height: 35px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+.input:focus {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
+
+#dugme {
+    margin-top: 35px;
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+    background-color: #e9d6d6;
+    border: 2px solid gray;
+    outline: none;
+}
+#dugme:hover {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
+.naslovna {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.slika {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pavle {
+    color: white;
+    font-family: cursive;
+    font-size: 50px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.natasa {
+    color: white;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.lokacija {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+}
+.nasa-lokacija {
+    background-color: #C1D3E0;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.prva-slika {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+}
+.prvaa {
+    background-color: #C0A9BD;
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pismo {
+    background-color: #eccabb;
+    display: flex;
+    justify-content: center;
+}
+.pismo:hover {
+    background-color: #e2b099;
+}
+.zatvori {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.modal-poruka {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.modal {
+    display: none; /* Modal je sakriven u početku */
+    position: fixed; /* Postavljen je fiksno da pokrije ceo ekran */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Poluprovidna crna pozadina */
+    justify-content: center;
+    align-items: center;
+  }
+.pjesma {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+}
+.pjesma-tekst {
+    background-color: #C1D3E0;
+    color: #333333;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.yt {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.aktivnosti {
+    display: flex;
+    flex-direction: row;
+    background-color: #C0A9BD;
+}
+.travel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.travel:hover {
+    background-color: #A989A5;
+}
+.galerija {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.galerija:hover {
+    background-color: #A989A5;  
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+}
+.video-tekst {
+    background-color: #C1D3E0;
+    color: #333333;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.videi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.myvideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.modall {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kraj {
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #eccabb;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}

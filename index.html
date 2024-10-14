@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naša priča/Pavle i Nataša</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="lozinka" class="lozinka-dizajn">
+        <h2 style="margin-top: 180px; font-size: 26px;">Unesi lozinku</h2>
+        <input type="password" id="password" placeholder="Naš datum" class="input">
+        <button onclick="provjeraLozinke()" id="dugme">Potvrdi</button>
+        <p id="error-poruka" class="error"></p>
+    </div>
+    <div id="content">    <div class="naslovna">
+        <div class="pavle">PAVLE</div>
+        <div class="slika">
+            <img src="slike_videi/naslovna.jpg" alt="Naslovna slika" style="width: 350px; height: 350px; border-radius: 50%;">
+        </div>
+        <div class="natasa">NATAŠA</div>
+    </div>
+    <div class="lokacija">
+        <div class="nasa-lokacija">OVDJE JE SVE POČELO...</div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.021070919585!2d18.57297811163603!3d43.81392234190061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c1171d3328bb%3A0x98411b4fa22725e9!2sRestoran%20BIT!5e0!3m2!1shr!2sba!4v1727563893405!5m2!1shr!2sba" width="350px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="prva-slika">
+        <div class="prvaa">NAŠA PRVA SLIKA <br>
+        (PRVI IZLAZAK)</div>
+        <div class="first"><img src="slike_videi/prva-slika.JPG" alt="Naša prva slika" style="height:300px; width: 200px; border-radius: 30px;"></div>
+    </div>
+    <div class="pismo" id="otvoriModal">
+        <img src="slike_videi/pismo.png" alt="Pismo" style="width: 80px; height: 60px;">
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-poruka">
+          <h4>SREĆAN ROĐENDAN LJUBAVI!</h4>
+          <p style="font-size: 12px;">Ovaj divn dan ću iskoristiti da ti se zahvalim na svemu. <br>
+        Hvala ti što si uvijek moja najveća podrška i oslonac,
+         što uvijek vjeruješ u mene i što me guraš naprijed ka ostvarenju ciljeva.
+         Hvala ti što u svakom momentu razumiješ moja ludila i trpiš me takvu kakva jesam.
+        Beskrajno sam srećna i zahvalna što te imam pored sebe i što mi pružaš ljubav na način na koji samo ti znaš.
+        Ostani uvijek takav kakav jesi, NAJBOLJI. Želim ti da nastaviš da ostvaruješ svoje snove i da nizaš
+        samo uspjehe, jer ti i ne znaš drugačije. Oduševljavaš me svojom strašću i posvećenosti za ono što voliš.
+        Ti si moja inspircija i osoba zbog koje se trudim da svaki dan budem bolja.
+        Ti si više od partnera - ti si moj najbolji drug, moj saputnik, moja najveća ljubav...
+        Razmišljam koje riječi da iskoristim da ti opišem ljubav koju osjećam prema tebi i tu shvatim da je 
+        Vuk Karadžić dosta omanuo pisajući riječnik srpskog jezika, jer nije napisao riječi dovoljno jake da 
+        opišu moju ljubav prema tebi. Zbog toga ću se koristiti tim što imam, šta da radim.
+        Ljubavi moja volim te najbeskrajnije na cijelom svijetu, što bi mi rekli ono naše SKROZ!!!
+        Zelim da ti ovaj tvoj 22. rođendan bude bar u pola poseban i lijep kao što je meni. <br>
+        Ljubi te i voli tvoja Nataša!
+    </p>
+          <button class="zatvori" id="zatvoriModal">Zatvori</button>
+        </div>
+      </div>
+    <div class="pjesma">
+        <div class="pjesma-tekst">NAMA BITNA PJESMA</div>
+        <div class="yt"><iframe width="350" height="200" src="https://www.youtube.com/embed/LpwAenS7qzY?si=CpcThBlk-k0P1h2a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </div>
+    <div class="aktivnosti">
+        <div class="travel" id="travelBtn">
+            <img src="slike_videi/travel.png" alt="Putovanja" style="margin-top: 6px;">
+            <div style="margin-top: 6px;">NAŠA PUTOVANJA</div>
+        </div>
+        <div class="galerija" id="galleryBtn">
+            <img src="slike_videi/gallery.png" alt="Galerija">
+            <div>GALERIJA</div>
+        </div>
+    </div>
+    <!--Travel prozor-->
+    <div id="travelModal" class="modall">
+        <div class="modal-content">
+            <span class="close" id="closeTravel">&times;</span>
+            <h2 style="text-align: center;">NAŠA PUTOVANJA</h2>
+            <div class="gallery">
+                <h3 style="text-align: center;">TURSKA 2023</h3>
+                    <div class="tur">
+                        <img src="slike_videi/turska1.jpg" alt="" style="width: 200px;"> <br>
+                        <img src="slike_videi/turska2.jpg" alt=""  style="width: 200px;"><br>
+                        <img src="slike_videi/turska3.jpg" alt="" style="width: 200px;"><br>
+                        <img src="slike_videi/turska4.jpg" alt=""  style="width: 200px;"><br>
+                    </div>
+                <h3 style="text-align: center;">BEČ 2023</h3>
+                    <div class="tur">
+                        <img src="slike_videi/bec1.jpg" alt=""   style="width: 200px;"> <br>
+                        <img src="slike_videi/bec2.jpg" alt=""   style="width: 200px;"><br>
+                        <img src="slike_videi/bec3.jpg" alt=""  style="width: 200px;"><br>
+                        <img src="slike_videi/bec4.jpg" alt=""  style="width: 200px;"><br>
+                    </div>
+                <h3 style="text-align: center;">EGIPAT 2024</h3>
+                    <div class="tur">
+                        <img src="slike_videi/egipat1.jpg" alt=""   style="width: 200px;"><br>
+                        <img src="slike_videi/egipat2.jpg" alt=""  style="width: 200px;"><br>
+                        <img src="slike_videi/egipat3.jpg" alt=""  style="width: 200px;"><br>
+                        <img src="slike_videi/egipat4.jpg" alt=""  style="width: 200px;"><br>
+                        <img src="slike_videi/egipat5.jpg" alt="" style="width: 200px;"><br>
+                        <img src="slike_videi/egipat6.jpg" alt="" style="width: 200px; margin-bottom: 30px;"><br>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--Gallery prozor-->
+    <div id="galleryModal" class="modall">
+        <div class="modal-content">
+            <span class="close" id="closeGallery">&times;</span>
+            <h2 style="text-align: center;">GALERIJA</h2>
+            <div class="tur">
+                <img src="slike_videi/slika1.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika2.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika3.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika4.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika5.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika6.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika7.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika8.jpg" alt="" style="width: 200px;"><br>
+                <img src="slike_videi/slika9.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika10.jpg" alt="" style="width: 200px;"><br>
+                <img src="slike_videi/slika11.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika12.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika13.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika14.jpg" alt="" style="width: 200px;"><br>
+                <img src="slike_videi/slika15.jpg" alt="" style="width: 200px;"><br>
+                <img src="slike_videi/slika16.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika17.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika18.jpg" alt="" style="width: 200px;"><br>
+                <img src="slike_videi/slika19.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika20.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika21.jpg" alt="" style="width: 200px;"><br>
+                <img src="slike_videi/slika22.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika23.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika24.jpg" alt="" style="width: 200px;"><br>
+                <img src="slike_videi/slika25.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika26.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika27.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika28.jpg" alt=""  style="width: 200px;"><br>
+                <img src="slike_videi/slika29.jpg" alt="" style="width: 200px;"><br>
+                <img src="slike_videi/slika30.jpg" alt=""  style="width: 200px; margin-bottom: 30px;"><br>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <div class="video-tekst">NAŠI VIDEO-SNIMCI</div>
+        <div class="videi">
+            <video class="myvideo" >
+                <source src="slike_videi/prvi.mp4" type="video/mp4">
+            </video>
+            <video class="myvideo" style="margin-top: 10px;">
+                <source src="slike_videi/drugi.mp4" type="video/mp4">
+            </video>
+            <video class="myvideo"  style="margin-top: 10px; margin-bottom: 10px;">
+                <source src="slike_videi/treci.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="kraj">NAŠA PRIČA/PAVLE I NATAŠA</div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
